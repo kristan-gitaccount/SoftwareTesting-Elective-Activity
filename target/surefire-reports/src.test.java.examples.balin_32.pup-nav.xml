@@ -1,5 +1,5 @@
-<testsuite failures="0" name="src/test/java/examples/balin_32/pup-nav.feature" skipped="0" tests="2" time="23.707817">
-  <testcase classname="src.test.java.examples.balin_32.pup-nav" name="Using PUP Academic Colleges" time="12.306357">
+<testsuite failures="0" name="src/test/java/examples/balin_32/pup-nav.feature" skipped="0" tests="2" time="24.446287">
+  <testcase classname="src.test.java.examples.balin_32.pup-nav" name="Using PUP Academic Colleges" time="12.864002">
     <system-out>Given configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
 And driver 'https://www.pup.edu.ph' ....................................... passed
 And mouse().move("{a}Academic").go() ...................................... passed
@@ -7,7 +7,7 @@ When click("{a}Colleges") ................................................. pass
 Then waitForUrl('https://www.pup.edu.ph/academic') ........................ passed
 * delay(2000) ............................................................. passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.examples.balin_32.pup-nav" name="Using PUP Academic Shs" time="11.40146">
+  <testcase classname="src.test.java.examples.balin_32.pup-nav" name="Using PUP Academic Shs" time="11.582285">
     <system-out>Given configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
 And driver 'https://www.pup.edu.ph' ....................................... passed
 And mouse().move("{a}Academic").go() ...................................... passed

@@ -13,7 +13,7 @@
     <div id="visualization"></div>
     <script>
 var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"airlines[1.1:15]","start":1839,"end":125422,"title":"airlines[1.1:15] 07:30:01.839-07:32:05.422 oneway"},{"id":2,"group":1,"content":"airlines[1.2:16]","start":126584,"end":220237,"title":"airlines[1.2:16] 07:32:06.584-07:33:40.237 returning"},{"id":3,"group":1,"content":"airlines[1.3:17]","start":224659,"end":429511,"title":"airlines[1.3:17] 07:33:44.659-07:37:09.511 stopover"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"airlines[1.1:13]","start":1623,"end":85746,"title":"airlines[1.1:13] 07:30:01.623-07:31:25.746 oneway"},{"id":2,"group":1,"content":"airlines[1.2:14]","start":86688,"end":165573,"title":"airlines[1.2:14] 07:31:26.688-07:32:45.573 returning"},{"id":3,"group":1,"content":"airlines[1.3:15]","start":166487,"end":246657,"title":"airlines[1.3:15] 07:32:46.487-07:34:06.657 stopover"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

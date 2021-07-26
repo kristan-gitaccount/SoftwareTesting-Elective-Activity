@@ -76,7 +76,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Automation_Testing</td>
-            <td>25 Jul 2021, 18:02</td>
+            <td>26 Jul 2021, 15:02</td>
     </tr>
   </tbody>
 </table>
@@ -116,7 +116,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_src-test-java-examples-finals-p-airline-feature_3.html">src/test/java/examples/finals/p-airline.feature</a>
+      <a href="report-feature_src-test-java-examples-finals-airlines-feature_3.html">src/test/java/examples/finals/airlines.feature</a>
     </div>
   
   
@@ -124,14 +124,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">57s 451ms</span>
+  <span class="lead-duration duration">3m 39s 927ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Phil Airlines Book Flights</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">oneway</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -163,7 +163,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">configure driver = {type:'chrome', executable: 'C:/Program Files/Google/Chrome/Application/chrome.exe'}</span>
+  <span class="name">configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'}</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -180,7 +180,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>18:01:55.676 karate.env system property was:</pre>
+        <pre>20:51:53.381 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -194,7 +194,108 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'}</span>
+  <span class="name">driver 'https://www.philippineairlines.com/en/ph/home'</span>
+  
+  <span class="lead-duration duration">23s 603ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>20:51:53.589 preferred port 9515 not available, will use: 64986</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">driver.maximize()</span>
+  
+  <span class="lead-duration duration">344ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read('oneway.feature')</span>
+  
+  <span class="lead-duration duration">1m 39s 608ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>com.intuit.karate.exception.KarateException: airlines.feature:8 - </a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: airlines.feature:8 - 
+[1.3:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.4:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.5:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>20:53:57.124 feature call failed: C:/Users/user/IdeaProjects/Automation_Testing/src/test/java/examples/finals/oneway.feature
+arg: null
+[1.3:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.4:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.5:5] oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">/Users/user/IdeaProjects/Automation_Testing/src/test/java/examples/finals/oneway.feature</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -214,73 +315,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">driver 'https://www.philippineairlines.com/en/ph/home'</span>
-  
-  <span class="lead-duration duration">10s 309ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">driver.maximize()</span>
-  
-  <span class="lead-duration duration">473ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">delay(5000)</span>
-  
-  <span class="lead-duration duration">5s 218ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
+  <span class="keyword indention">&gt; And</span>
   <span class="name">highlight('{a}BOOK FLIGHT')</span>
   
-  <span class="lead-duration duration">3s 047ms</span>
+  <span class="lead-duration duration">3s 076ms</span>
 
   </div>
 
@@ -298,10 +336,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(2000)</span>
   
-  <span class="lead-duration duration">2s 007ms</span>
+  <span class="lead-duration duration">2s 026ms</span>
 
   </div>
 
@@ -319,10 +357,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('input[id=flightTypeOneWay_RB]').click()</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeOneWay_RB]')</span>
   
-  <span class="lead-duration duration">437ms</span>
+  <span class="lead-duration duration">232ms</span>
 
   </div>
 
@@ -340,10 +378,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(2000)</span>
   
-  <span class="lead-duration duration">2s 005ms</span>
+  <span class="lead-duration duration">2s 020ms</span>
 
   </div>
 
@@ -361,10 +399,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
+  <span class="keyword indention">&gt; And</span>
   <span class="name">highlight('{label}DESTINATION')</span>
   
-  <span class="lead-duration duration">3s 049ms</span>
+  <span class="lead-duration duration">3s 112ms</span>
 
   </div>
 
@@ -382,10 +420,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">input('input[id=destinationSel]', 'ceb')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' dvo')</span>
   
-  <span class="lead-duration duration">427ms</span>
+  <span class="lead-duration duration">753ms</span>
 
   </div>
 
@@ -403,10 +441,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
   
-  <span class="lead-duration duration">399ms</span>
+  <span class="lead-duration duration">458ms</span>
 
   </div>
 
@@ -424,133 +462,7 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">delay(2000)</span>
-  
-  <span class="lead-duration duration">2s 001ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('{label}CABIN CLASS')</span>
-  
-  <span class="lead-duration duration">3s 034ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
-  
-  <span class="lead-duration duration">065ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">delay(2000)</span>
-  
-  <span class="lead-duration duration">2s 012ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('button[id=baf-submit-btn]')</span>
-  
-  <span class="lead-duration duration">3s 033ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
-  
-  <span class="lead-duration duration">262ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(2000)</span>
   
   <span class="lead-duration duration">2s 013ms</span>
@@ -571,10 +483,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
   
-  <span class="lead-duration duration">3s 039ms</span>
+  <span class="lead-duration duration">3s 033ms</span>
 
   </div>
 
@@ -592,10 +504,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
   
-  <span class="lead-duration duration">100ms</span>
+  <span class="lead-duration duration">048ms</span>
 
   </div>
 
@@ -613,10 +525,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(2000)</span>
   
-  <span class="lead-duration duration">2s 005ms</span>
+  <span class="lead-duration duration">2s 010ms</span>
 
   </div>
 
@@ -634,10 +546,136 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">3s 038ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">101ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">3s 035ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">5s 099ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
   <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
   
-  <span class="lead-duration duration">3s 074ms</span>
+  <span class="lead-duration duration">3s 032ms</span>
 
   </div>
 
@@ -655,10 +693,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('button[id=btnOkayLocationsModalAllLocations]').click()</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
   
-  <span class="lead-duration duration">1s 368ms</span>
+  <span class="lead-duration duration">064ms</span>
 
   </div>
 
@@ -676,10 +714,430 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(5000)</span>
   
-  <span class="lead-duration duration">5s 004ms</span>
+  <span class="lead-duration duration">5s 007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 029ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 029ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeOneWay_RB]')</span>
+  
+  <span class="lead-duration duration">078ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">3s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' ceb')</span>
+  
+  <span class="lead-duration duration">764ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">424ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">3s 026ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">083ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">3s 033ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">5s 604ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">3s 048ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">1s 438ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">3s 033ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">1s 352ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(5000)</span>
+  
+  <span class="lead-duration duration">5s 016ms</span>
 
   </div>
 
@@ -697,10 +1155,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('button[id=w29]')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
   
-  <span class="lead-duration duration">3s 057ms</span>
+  <span class="lead-duration duration">3s 050ms</span>
 
   </div>
 
@@ -708,11 +1166,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>com.intuit.karate.exception.KarateException: p-airline.feature:59 - evaluation (js) failed: highlight('button[id=w29]'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00473733+2504499]\n\tOrdinal0 [0x0040C401+2081793]\n\tOrdinal0 [0x00312628+1058344]\n\tOrdinal0 [0x00314CEA+1068266]\n\tOrdinal0 [0x00314BAE+1067950]\n\tOrdinal0 [0x00315433+1070131]\n\tOrdinal0 [0x00365659+1398361]\n\tOrdinal0 [0x00355E83+1334915]\n\tOrdinal0 [0x00364CDB+1395931]\n\tOrdinal0 [0x00355D4B+1334603]\n\tOrdinal0 [0x003322B4+1188532]\n\tOrdinal0 [0x00333149+1192265]\n\tGetHandleVerifier [0x005EFB8C+1512252]\n\tGetHandleVerifier [0x0069B0DF+2214031]\n\tGetHandleVerifier [0x004F4BC3+484211]\n\tGetHandleVerifier [0x004F3E69+480793]\n\tOrdinal0 [0x0041218D+2105741]\n\tOrdinal0 [0x004166E8+2123496]\n\tOrdinal0 [0x00416827+2123815]\n\tOrdinal0 [0x0041FB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: p-airline.feature:59 - evaluation (js) failed: highlight('button[id=w29]'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00473733+2504499]\n\tOrdinal0 [0x0040C401+2081793]\n\tOrdinal0 [0x00312628+1058344]\n\tOrdinal0 [0x00314CEA+1068266]\n\tOrdinal0 [0x00314BAE+1067950]\n\tOrdinal0 [0x00315433+1070131]\n\tOrdinal0 [0x00365659+1398361]\n\tOrdinal0 [0x00355E83+1334915]\n\tOrdinal0 [0x00364CDB+1395931]\n\tOrdinal0 [0x00355D4B+1334603]\n\tOrdinal0 [0x003322B4+1188532]\n\tOrdinal0 [0x00333149+1192265]\n\tGetHandleVerifier [0x005EFB8C+1512252]\n\tGetHandleVerifier [0x0069B0DF+2214031]\n\tGetHandleVerifier [0x004F4BC3+484211]\n\tGetHandleVerifier [0x004F3E69+480793]\n\tOrdinal0 [0x0041218D+2105741]\n\tOrdinal0 [0x004166E8+2123496]\n\tOrdinal0 [0x00416827+2123815]\n\tOrdinal0 [0x0041FB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
       </div>
     </div>
   </div>
@@ -729,8 +1187,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('button[id=w29]').click()</span>
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -750,7 +1208,364 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeOneWay_RB]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' mnl')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(5000)</span>
   
   <span class="lead-duration duration">000ms</span>
@@ -770,9 +1585,41 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
+<div class="brief failed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 049ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">scroll('div[id=tpl3_table-bound0-cell00-available]')</span>
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -792,8 +1639,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('div[id=tpl3_table-bound0-cell00-available]')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeOneWay_RB]')</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -813,8 +1660,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('div[id=tpl3_table-bound0-cell00-available]').click()</span>
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -834,8 +1681,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">scroll('button[id=w78]')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -855,8 +1702,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">highlight('button[id=w78]')</span>
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' zam')</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -876,8 +1723,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">mouse().move('button[id=w78]').click()</span>
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -897,8 +1744,3033 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">*</span>
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
   <span class="name">delay(5000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 060ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: oneway.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeOneWay_RB]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' cgy')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(5000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-java-examples-finals-airlines-feature_3.html">src/test/java/examples/finals/airlines.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2m 52s 505ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">returning</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>20:53:58.285 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">driver 'https://www.philippineairlines.com/en/ph/home'</span>
+  
+  <span class="lead-duration duration">12s 205ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>20:53:58.292 preferred port 9515 not available, will use: 55548</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">driver.maximize()</span>
+  
+  <span class="lead-duration duration">310ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read('returning.feature')</span>
+  
+  <span class="lead-duration duration">1m 21s 135ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>com.intuit.karate.exception.KarateException: airlines.feature:8 - </a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: airlines.feature:8 - 
+[1.3:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.4:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.5:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>20:55:31.939 feature call failed: C:/Users/user/IdeaProjects/Automation_Testing/src/test/java/examples/finals/returning.feature
+arg: null
+[1.3:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.4:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}
+[1.5:5] returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">/Users/user/IdeaProjects/Automation_Testing/src/test/java/examples/finals/returning.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 032ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 020ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeReturning_RB]')</span>
+  
+  <span class="lead-duration duration">055ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">3s 017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' dvo')</span>
+  
+  <span class="lead-duration duration">562ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">275ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">3s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">052ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">3s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">115ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">3s 046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">091ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">3s 027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">060ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 072ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 022ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeReturning_RB]')</span>
+  
+  <span class="lead-duration duration">058ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">3s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' ceb')</span>
+  
+  <span class="lead-duration duration">863ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">460ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">3s 030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">045ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">3s 043ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">526ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">3s 025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">053ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">3s 026ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">1s 510ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">2s 006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 494ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+          <a>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeReturning_RB]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' mnl')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 051ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeReturning_RB]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' zam')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{a}BOOK FLIGHT')</span>
+  
+  <span class="lead-duration duration">3s 048ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: returning.feature:7 - evaluation (js) failed: highlight('{a}BOOK FLIGHT'), javascript failed twice: {&quot;value&quot;:{&quot;stacktrace&quot;:&quot;Backtrace:\n\tOrdinal0 [0x00343733+2504499]\n\tOrdinal0 [0x002DC401+2081793]\n\tOrdinal0 [0x001E2628+1058344]\n\tOrdinal0 [0x001E4CEA+1068266]\n\tOrdinal0 [0x001E4BAE+1067950]\n\tOrdinal0 [0x001E5433+1070131]\n\tOrdinal0 [0x00235659+1398361]\n\tOrdinal0 [0x00225E83+1334915]\n\tOrdinal0 [0x00234CDB+1395931]\n\tOrdinal0 [0x00225D4B+1334603]\n\tOrdinal0 [0x002022B4+1188532]\n\tOrdinal0 [0x00203149+1192265]\n\tGetHandleVerifier [0x004BFB8C+1512252]\n\tGetHandleVerifier [0x0056B0DF+2214031]\n\tGetHandleVerifier [0x003C4BC3+484211]\n\tGetHandleVerifier [0x003C3E69+480793]\n\tOrdinal0 [0x002E218D+2105741]\n\tOrdinal0 [0x002E66E8+2123496]\n\tOrdinal0 [0x002E6827+2123815]\n\tOrdinal0 [0x002EFB73+2161523]\n\tBaseThreadInitThunk [0x755DFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x774A7A4E+238]\n\t(No symbol) [0x00000000]\n&quot;,&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('input[id=flightTypeReturning_RB]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}DESTINATION')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">input('input[id=destinationSel]', ' cgy')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">input('input[id=destinationSel]', Key.ENTER)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('{label}CABIN CLASS')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">select('select[id=baf-cabin-class]', 1)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=baf-submit-btn]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=baf-submit-btn]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click()</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">highlight('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">click('button[id=btnOkayLocationsModalAllLocations]')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">delay(2000)</span>
   
   <span class="lead-duration duration">000ms</span>
 

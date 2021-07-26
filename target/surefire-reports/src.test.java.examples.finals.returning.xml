@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/examples/finals/returning.feature" skipped="0" tests="1" time="89.750207">
+  <testcase classname="src.test.java.examples.finals.returning" name="oneway" time="89.750207">
+    <system-out>* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+* driver 'https://www.philippineairlines.com/en/ph/home' .................. passed
+* driver.maximize() ....................................................... passed
+* call read('oneway.feature@tag1') ........................................ passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<testsuite failures="0" name="src/test/java/examples/balin_32/academic-page.feature" skipped="0" tests="2" time="34.854756">
+  <testcase classname="src.test.java.examples.balin_32.academic-page" name="Using PUP Academic Colleges" time="19.25534">
+    <system-out>Given configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+And driver 'https://www.pup.edu.ph' ....................................... passed
+And mouse().move("{a}Academic").go() ...................................... passed
+When click("{a}Colleges") ................................................. passed
+Then waitForUrl('https://www.pup.edu.ph/academic') ........................ passed
+* delay(2000) ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.balin_32.academic-page" name="Using PUP Academic Shs" time="15.599416">
+    <system-out>Given configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+And driver 'https://www.pup.edu.ph' ....................................... passed
+And mouse().move("{a}Academic").go() ...................................... passed
+When click("{a}Colleges") ................................................. passed
+Then waitForUrl('https://www.pup.edu.ph/academic') ........................ passed
+* delay(2000) ............................................................. passed
+Given configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+And driver 'https://www.pup.edu.ph' ....................................... passed
+And mouse().move("{a}Academic").go() ...................................... passed
+When click("{a}Senior High School") ....................................... passed
+Then waitForUrl('https://www.pup.edu.ph/shs') ............................. passed
+* delay(2000) ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,78 @@
+<testsuite failures="0" name="src/test/java/examples/finals/p-airline.feature" skipped="0" tests="2" time="107.982156">
+  <testcase classname="src.test.java.examples.finals.p-airline" name="Using Davao" time="54.529109">
+    <system-out>* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+* driver 'https://www.philippineairlines.com/en/ph/home' .................. passed
+* driver.maximize() ....................................................... passed
+* delay(5000) ............................................................. passed
+And highlight('{a}BOOK FLIGHT') ........................................... passed
+* delay(2000) ............................................................. passed
+And mouse().move('input[id=flightTypeReturning_RB]').click() .............. passed
+* delay(2000) ............................................................. passed
+And highlight('{label}DESTINATION') ....................................... passed
+And input('input[id=destinationSel]', ' dvo') ............................. passed
+* input('input[id=destinationSel]', Key.ENTER) ............................ passed
+* delay(2000) ............................................................. passed
+And highlight('{label}CABIN CLASS') ....................................... passed
+And select('select[id=baf-cabin-class]', 1) ............................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=baf-submit-btn]') ................................ passed
+And mouse().move('button[id=baf-submit-btn]').click() ..................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]') . passed
+And mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click() . passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalAllLocations]') ............. passed
+And mouse().move('button[id=btnOkayLocationsModalAllLocations]').click() .. passed
+* delay(5000) ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.finals.p-airline" name="Using Cebu" time="53.453046">
+    <system-out>* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+* driver 'https://www.philippineairlines.com/en/ph/home' .................. passed
+* driver.maximize() ....................................................... passed
+* delay(5000) ............................................................. passed
+And highlight('{a}BOOK FLIGHT') ........................................... passed
+* delay(2000) ............................................................. passed
+And mouse().move('input[id=flightTypeReturning_RB]').click() .............. passed
+* delay(2000) ............................................................. passed
+And highlight('{label}DESTINATION') ....................................... passed
+And input('input[id=destinationSel]', ' dvo') ............................. passed
+* input('input[id=destinationSel]', Key.ENTER) ............................ passed
+* delay(2000) ............................................................. passed
+And highlight('{label}CABIN CLASS') ....................................... passed
+And select('select[id=baf-cabin-class]', 1) ............................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=baf-submit-btn]') ................................ passed
+And mouse().move('button[id=baf-submit-btn]').click() ..................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]') . passed
+And mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click() . passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalAllLocations]') ............. passed
+And mouse().move('button[id=btnOkayLocationsModalAllLocations]').click() .. passed
+* delay(5000) ............................................................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+* driver 'https://www.philippineairlines.com/en/ph/home' .................. passed
+* driver.maximize() ....................................................... passed
+* delay(5000) ............................................................. passed
+And highlight('{a}BOOK FLIGHT') ........................................... passed
+* delay(2000) ............................................................. passed
+And mouse().move('input[id=flightTypeReturning_RB]').click() .............. passed
+* delay(2000) ............................................................. passed
+And highlight('{label}DESTINATION') ....................................... passed
+And input('input[id=destinationSel]', ' ceb') ............................. passed
+* input('input[id=destinationSel]', Key.ENTER) ............................ passed
+* delay(2000) ............................................................. passed
+And highlight('{label}CABIN CLASS') ....................................... passed
+And select('select[id=baf-cabin-class]', 1) ............................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=baf-submit-btn]') ................................ passed
+And mouse().move('button[id=baf-submit-btn]').click() ..................... passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalSelectedInternationalDestination]') . passed
+And mouse().move('button[id=btnOkayLocationsModalSelectedInternationalDestination]').click() . passed
+* delay(2000) ............................................................. passed
+And highlight('button[id=btnOkayLocationsModalAllLocations]') ............. passed
+And mouse().move('button[id=btnOkayLocationsModalAllLocations]').click() .. passed
+* delay(5000) ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

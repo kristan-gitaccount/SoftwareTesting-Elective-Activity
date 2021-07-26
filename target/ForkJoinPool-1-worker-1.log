@@ -1,6 +1,6 @@
-15:12:03.278 karate.env system property was:  
-15:13:28.489 karate.env system property was:  
-15:13:28.489 preferred port 9515 not available, will use: 55829
+15:49:22.419 karate.env system property was:  
+15:49:39.280 karate.env system property was:  
+15:49:39.290 preferred port 9515 not available, will use: 64349
 15:14:48.288 karate.env system property was:  
 15:14:48.288 preferred port 9515 not available, will use: 55647
 IGHT'), javascript failed twice: {"value":{"stacktrace":"Backtrace:\n\tOrdinal0 [0x00483733+2504499]\n\tOrdinal0 [0x0041C401+2081793]\n\tOrdinal0 [0x00322628+1058344]\n\tOrdinal0 [0x00324CEA+1068266]\n\tOrdinal0 [0x00324BAE+1067950]\n\tOrdinal0 [0x00325433+1070131]\n\tOrdinal0 [0x00375659+1398361]\n\tOrdinal0 [0x00365E83+1334915]\n\tOrdinal0 [0x00374CDB+1395931]\n\tOrdinal0 [0x00365D4B+1334603]\n\tOrdinal0 [0x003422B4+1188532]\n\tOrdinal0 [0x00343149+1192265]\n\tGetHandleVerifier [0x005FFB8C+1512252]\n\tGetHandleVerifier [0x006AB0DF+2214031]\n\tGetHandleVerifier [0x00504BC3+484211]\n\tGetHandleVerifier [0x00503E69+480793]\n\tOrdinal0 [0x0042218D+2105741]\n\tOrdinal0 [0x004266E8+2123496]\n\tOrdinal0 [0x00426827+2123815]\n\tOrdinal0 [0x0042FB73+2161523]\n\tBaseThreadInitThunk [0x7582FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x771B7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x771B7A4E+238]\n","error":"javascript error","message":"javascript error: Cannot read property 'getAttribute' of null\n  (Session info: chrome=92.0.4515.107)"}}

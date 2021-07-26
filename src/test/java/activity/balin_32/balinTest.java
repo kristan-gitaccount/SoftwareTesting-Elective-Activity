@@ -1,4 +1,4 @@
-package examples.balin_32;
+package activity.balin_32;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -19,7 +19,7 @@ public class balinTest {
     @Test
     public void testParallel() {
 
-        Results results = Runner.path("src/test/java/examples/balin_32").tags("~@ignore").parallel(1);
+        Results results = Runner.path("src/test/java/activity/balin_32").tags("~@ignore").parallel(1);
         //Results results = Runner.parallel(getClass(), 5);
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
